@@ -43,7 +43,7 @@ global ag0 ag1 ag2 ag3 ag4 ag5 bg1 bg2 bg3 bg4 bg5 wg
 
 
 
-Fai=20*eye(2);%lambda
+Fai=6*eye(2);%lambda
 g=9.8;
 m1 = 2.6366;%5 ; 
 m2 = 0.82;%2.6366+0.82 ;
@@ -54,7 +54,7 @@ m2t = 1;%0.82;%2.6366+0.82 ;
 
 
 
-Kv= 6*eye(2);
+Kv= 4*eye(2);
 
 sizes = simsizes;
 sizes.NumContStates = 2*node;

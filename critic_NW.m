@@ -73,7 +73,7 @@ qd=[qd1;qd2];
 dqd=[d_qd1;d_qd2];
 f = [f1;f2] ; 
 J_Prev = [J1old;J2old] ; 
-r = 0.01*(e+(3*de));
+r = 0.01*(e+(6*de));
 
 z_critic = [e(1);de(1);qd(1);dqd(1);f(1);e(2);de(2);qd(2);dqd(2);f(2)]
 for j=1:1:nodecritic
@@ -94,7 +94,7 @@ end
 function sys=mdlOutputs(t,x,u)
 global c_critic b_critic nodecritic qm1 qm2 alpha dqm1 dqm1 dqm2 alpha J
 alpha = 0.97 ; 
- qm1 = 1.13 ; qm2 = 0.17 ; dqm1= 6.65; dqm2  =3.68;
+ qm1 = 1.13 ; qm2 = 0.17 ; dqm1= 6.65; dqm2  =3.68;% maxmimum angles
 q1=u(1);
 d_q1=u(2);
 q2=u(3);
